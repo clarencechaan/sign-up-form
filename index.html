@@ -25,42 +25,42 @@
         </div>
         <div class="sign-up">
             Let's do this!
-            <form action="" method="post">
+            <form action="" method="get" id="form">
                 <div class="form-row-1">
                     <div class="label-input">
                         <label for="first-name" class="sign-up-label">FIRST NAME</label>
-                        <input type="text" id="first-name" name="first-name">
+                        <input type="text" id="first-name" name="first-name" value required>
                     </div>
                     <div class="label-input">
                         <label for="last-name" class="sign-up-label">LAST NAME</label>
-                        <input type="text" id="last-name" name="last-name">
+                        <input type="text" id="last-name" name="last-name" value required>
                     </div>
                 </div>
                 <div class="form-row-2">
                     <div class="label-input">
                         <label for="e-mail" class="sign-up-label">EMAIL</label>
-                        <input type="email" id="e-mail" name="e-mail">
+                        <input type="email" id="e-mail" name="e-mail" value required>
                     </div>
                     <div class="label-input">
                         <label for="phone" class="sign-up-label">PHONE NUMBER</label>
-                        <input type="tel" id="phone" name="phone">
+                        <input type="tel" id="phone" name="phone" value required>
                     </div>
                 </div>
                 <div class="form-row-3">
                     <div class="label-input">
                         <label for="password" class="sign-up-label">PASSWORD</label>
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" value required>
                         <div class="not-matching-text hidden">* Passwords do not match</div>
                     </div>
                     <div class="label-input">
                         <label for="confirm-password" class="sign-up-label">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm-password" name="confirm-password">
+                        <input type="password" id="confirm-password" name="confirm-password" value required>
                     </div>
                 </div>
             </form>
         </div>
         <div>
-            <button>Create Account</button>
+            <button form="form">Create Account</button>
             <br>
             <div class="login">Already have an account? <a href="#">Log in</a></div>
         </div>

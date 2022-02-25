@@ -80,13 +80,11 @@ input:focus {
     outline: solid 1px blue;
 }
 
-input:invalid,
+input:invalid:not([value=""]),
 #password.not-matching,
 #confirm-password.not-matching {
     outline: solid 1px red;
 }
-
-/* .form-row-1 */
 
 button {
     margin-left: 40px;
